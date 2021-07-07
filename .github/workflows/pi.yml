@@ -3,7 +3,7 @@ name: Fry
 on: workflow_dispatch
 
 jobs:
-  gaia:
+  fry:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
