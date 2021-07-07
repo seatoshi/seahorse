@@ -1,0 +1,15 @@
+# /etc/systemd/system/seahorse.service
+[Unit]
+Description=Seahorse, the Ocean Hub
+After=firstboot.service
+
+[Service]
+Type=simple
+# diligent fry become established and add their various addresses here
+ExecStart=/usr/bin/gaiad start --p2p.persistent_peers dcc783f2e6cc49734396b767fb715a15bfbc7ea7@192.168.193.208:26656
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=8192
+
+[Install]
+WantedBy=multi-user.target
