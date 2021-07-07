@@ -16,7 +16,7 @@ RUN sed -i -e "s/^CheckSpace/#!!!CheckSpace/g" /etc/pacman.conf && \
 	# due to a high death rate among fry, enterprising fry should make their own zt networks, and consider adding i2p, tinc and others.
 	systemctl enable zerotier-one && \
 	echo 'seahorsed init fry$RANDOM' >> /usr/local/bin/firstboot.sh && \
-  	ehco "wget https://github.com/seatoshi/seahorse/raw/master/genesis.json" >> /usr/local/bin/firstboot.sh && \
+  	echo "wget https://github.com/seatoshi/seahorse/raw/master/genesis.json" >> /usr/local/bin/firstboot.sh && \
   	echo "cp genesis.json /root/.seahorse/config" && \
 	# The original meshbird may have been more compelling, as it allowed to join a network with out a coordinator.  Fry should explore before being eaten by sharks. 
 	echo "zerotier-cli join 1d71939404e366e8" && \
