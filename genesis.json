@@ -170,7 +170,7 @@
           "address": "seahorse13l5r9vtqp0lwpsvjk4fe08gneh3qwrvcg9sru2",
           "coins": [
             {
-              "amount": "1300000",
+              "amount": "300000",
               "denom": "seahorse"
             }
           ]
