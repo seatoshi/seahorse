@@ -175,15 +175,6 @@
             }
           ]
         },
-        {
-          "address": "seahorse165qdxsqsgz4tj9h6h8ca4tzmlvxrykxetx0l57",
-          "coins": [
-            {
-              "amount": "1300000",
-              "denom": "seahorse"
-            }
-          ]
-        }
       ],
       "denom_metadata": [],
       "params": {
